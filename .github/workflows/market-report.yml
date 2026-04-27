@@ -1,6 +1,9 @@
 name: Market report Telegram
 
 on:
+  push:
+    branches:
+      - main
   schedule:
     # 07:00 and 22:00 Asia/Ho_Chi_Minh.
     - cron: "0 0,15 * * *"
